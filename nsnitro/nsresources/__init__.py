@@ -20,6 +20,7 @@ from nsserver import NSServer
 from nsservicegroup import NSServiceGroup
 from nsservicegroupserverbinding import NSServiceGroupServerBinding
 from nsservicelbmonitorbinding import NSServiceLBMonitorBinding
+from nslbmonitor import NSLBMonitor
 from nssslcertkey import NSSSLCertKey
 from nssslcertkeysslvserverbinding import NSSSLCertKeySSLVServerBinding
 from nssslvserver import NSSSLVServer
@@ -54,6 +55,7 @@ __all__ = ['NSBaseResource',
            'NSCSVServerCSPolicyBinding',
            'NSCSVServerResponderPolicyBinding',
            'NSCSVServerRewritePolicyBinding',
+           'NSLBMonitor',
            'NSLBVServer',
            'NSLBVServerServiceBinding',
            'NSLBVServerCSVserverBinding',
