@@ -352,7 +352,7 @@ class NSLBMonitor(NSBaseResource):
                 Use this API to fetch LB Monitor of given name.
                 """
                 __monitor = NSLBMonitor()
-                __monitor.set_name(monitor.get_name())
+                __monitor.set_monitorname(monitor.get_monitorname())
                 __monitor.get_resource(nitro)
                 return __monitor
 
