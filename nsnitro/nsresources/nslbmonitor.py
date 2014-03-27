@@ -11,6 +11,7 @@ class NSLBMonitor(NSBaseResource):
                 """
                 super(NSLBMonitor, self).__init__()
                 self.options = {'monitorname': '',
+                                'name': '',
                                 'alertretries': '',
                                 'destport': '',
                                 'deviation': '',
@@ -72,6 +73,7 @@ class NSLBMonitor(NSBaseResource):
 
         def set_monitorname(self, monitorname):
                 self.options['monitorname'] = monitorname
+                self.options['name'] = monitorname
 
         def get_monitorname(self):
                 return self.options['monitorname']
